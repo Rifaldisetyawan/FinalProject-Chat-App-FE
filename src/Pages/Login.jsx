@@ -5,16 +5,17 @@ import '../Styles/Register.css'
 import logo from '../logo2.png'
 
 const Login = () => {
-        const handleSubmit = (e) => {
-            e.preventDefault();
-            alert("form");
-        }
-        const handleChange = (e) => {
-    
-        }
-        return (
-            <>
-                <FormContainer className='container'>
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        alert("form");
+    }
+    const handleChange = (e) => {
+
+    }
+    return (
+        <>
+            <FormContainer className='container'>
+                <div className='container-page'>
                     <form onSubmit={(e) => handleSubmit(e)}>
                         <div className='brand'>
                             <img src={logo} alt='' />
@@ -24,13 +25,15 @@ const Login = () => {
                         <button type='submit'>Login</button>
                         <span>Don't Have An Account? <Link to="/register">Register</Link></span>
                     </form>
-                </FormContainer>
-            </>
-        )
-    
-    }
-    
-    const FormContainer = styled.div``
+                    <div className='footer'>@YNTKTS Tech</div>
+                </div>
+            </FormContainer>
+        </>
+    )
+
+}
+
+const FormContainer = styled.div``
 
 
 export default Login

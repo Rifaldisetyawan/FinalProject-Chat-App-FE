@@ -4,9 +4,20 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
+    /* gap: 1rem; */
     align-items: center;
     background-image: linear-gradient(180deg, #0c375d, #227278 );
+    
+}
+.container-page{
+    border: 5px solid;
+    border: 5px solid;
+    border-image: linear-gradient(
+        #ff512f,
+        #dd2476,
+        #1c64ff
+    )1;
+    animation: rotate 2.5s ease-in infinite;
 }
 .brand{
     display: flex;
@@ -26,14 +37,9 @@ form{
     flex-direction: column;
     gap: 2rem;
     background-color: #00000076;
-    border: 5px solid;
-    padding: 3rem 5rem;
-    border-image: linear-gradient(
-        #ff512f,
-        #dd2476,
-        #1c64ff
-    )1;
-    animation: rotate 2.5s ease-in infinite;
+    /* border: 5px solid; */
+    padding: 1.2rem 5rem;
+    
     
 }
 @keyframes rotate{
@@ -84,3 +90,12 @@ a{
     text-decoration: none;
     font-weight: bold;
 }
+.footer{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 10.2rem;
+    background-color: #042243;
+    /* border: 5px solid; */
+    color: white;
+}
+    

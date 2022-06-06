@@ -15,6 +15,7 @@ const Chat = () => {
   const [contacts, setContacts] = useState([]);
   const [currentChat, setCurrentChat] = useState(undefined);
   const [currentUser, setCurrentUser] = useState(undefined);
+  // eslint-disable-next-line
   useEffect(async () => {
     if (!localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY)) {
       navigate("/login");
@@ -25,6 +26,7 @@ const Chat = () => {
         )
       );
     }
+    // eslint-disable-next-line
   }, []);
   useEffect(() => {
     if (currentUser) {
@@ -32,7 +34,7 @@ const Chat = () => {
       socket.current.emit("add-user", currentUser._id);
     }
   }, [currentUser]);
-
+// eslint-disable-next-line
   useEffect(async () => {
     if (currentUser) {
       if (currentUser.isAvatarImageSet) {
@@ -42,6 +44,7 @@ const Chat = () => {
         navigate("/setAvatar");
       }
     }
+    // eslint-disable-next-line
   }, [currentUser]);
   const handleChatChange = (chat) => {
     setCurrentChat(chat);

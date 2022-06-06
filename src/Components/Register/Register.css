@@ -29,10 +29,7 @@
     height: 5rem;
     align-items: center;
 }
-h1{
-    color: white;
-}
-form{
+.form-register{
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -52,22 +49,20 @@ form{
         )1;
     }
 }
-input{
+.input-register{
     background-color: transparent;
     padding: 1rem;
     border: 0.1rem solid white;
     border-radius: 0.4rem;
     color: white;
     font-size: 1rem;
+    outline-style: none;
 }
-input:focus{
-    border: 0.1rem solid #997af0;
-    outline: none ;
-}
-input::placeholder{
+
+.input-register::placeholder{
     color: white;
 }
-button{
+.button-register{
     background-color: #0063b6;
     color: white;
     padding: 1rem 2rem;
@@ -78,8 +73,36 @@ button{
     font-size: 1rem;
     transition: 0.5s ease-in-out;
 }
-button:hover{
+.button-register:hover{
     background-color: #20d462;
+}
+.input-password{
+    display: flex;
+    border: 0.1rem solid white;
+    border-radius: 0.4rem;
+}
+.input-register-password{
+    background-color: transparent;
+    padding: 1rem;
+    border: none;
+    /* border-radius: 0.4rem; */
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+}
+.input-register-password:focus{
+    /* border: 0.1rem solid #997af0; */
+    outline: none ;
+}
+.input-register-password::placeholder{
+    color: white;
+}
+.showPassword{
+   align-self: center ;
+   padding: 0.5rem;
+   font-size: 1.5rem;
+   border-radius: 0.4rem;
+   color: white;
 }
 span{
     color: white;

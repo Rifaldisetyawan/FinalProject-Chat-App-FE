@@ -1,5 +1,5 @@
-import axios from '../../chat-app/node_modules/axios'
+import axios from 'axios'
 
 export const axiosInstance = axios.create({
-    baseURL : "https://chatappwhatsup.herokuapp.com/"
+    baseURL : "https://chatappwhatsup.herokuapp.com/api"
 })

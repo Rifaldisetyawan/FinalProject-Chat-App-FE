@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import {axiosInstance} from "../../config";
+import axios from "axios";
 import { Buffer } from "buffer";
 import loader from "../../Assets/loader.gif"
 import { ToastContainer, toast } from "react-toastify";
@@ -37,7 +37,7 @@ const SetAvatar = () => {
         localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY)
       );
 
-      const { data } = await axiosInstance.post(`${setAvatarRoute}/${user._id}`, {
+      const { data } = await axios.post(`${setAvatarRoute}/${user._id}`, {
         image: avatars[selectedAvatar],
       });
 
@@ -56,7 +56,7 @@ const SetAvatar = () => {
   useEffect(async () => {
     const data = [];
     for (let i = 0; i < 4; i++) {
-      const image = await axiosInstance.get(
+      const image = await axios.get(
         `${api}/${Math.round(Math.random() * 1000)}`
       );
       const buffer = new Buffer(image.data);

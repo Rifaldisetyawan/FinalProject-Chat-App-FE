@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {axiosInstance} from "../../config";
+import axios from "axios";
 import styled from "styled-components";
 import { useNavigate, Link } from "react-router-dom";
 import Logo from "../../logo2.png";
@@ -74,7 +74,7 @@ const Register = () => {
     event.preventDefault();
     if (handleValidation()) {
       const { email, username, password } = values;
-      const { data } = await axiosInstance.post(registerRoute, {
+      const { data } = await axios.post(registerRoute, {
         username,
         email,
         password,

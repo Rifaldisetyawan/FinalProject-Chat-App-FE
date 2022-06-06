@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import axios from "axios";
+import axiosInstance from "../../config";
 import { Buffer } from "buffer";
 import loader from "../../Assets/loader.gif"
 import { ToastContainer, toast } from "react-toastify";
@@ -37,7 +37,7 @@ const SetAvatar = () => {
         localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY)
       );
 
-      const { data } = await axios.post(`${setAvatarRoute}/${user._id}`, {
+      const { data } = await axiosInstance.post(`${setAvatarRoute}/${user._id}`, {
         image: avatars[selectedAvatar],
       });
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+import axiosInstance from "../../config";
 import styled from "styled-components";
 import { useNavigate, Link } from "react-router-dom";
 import Logo from "../../logo2.png";
@@ -51,7 +51,7 @@ const Login = () => {
         event.preventDefault();
         if (validateForm()) {
             const { username, password } = values;
-            const { data } = await axios.post(loginRoute, {
+            const { data } = await axiosInstance.post(loginRoute, {
                 username,
                 password,
             });

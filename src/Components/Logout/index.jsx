@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { BiPowerOff } from "react-icons/bi";
 import styled from "styled-components";
-import axios from "axios";
+import axiosInstance from "../../config";
 import { logoutRoute } from "../../Utils/APIRoutes";
 import '../Logout/Logout.css'
 import swal from "sweetalert";
@@ -14,7 +14,7 @@ const Logout = () => {
     const id = await JSON.parse(
       localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY)
     )._id;
-    const data = await axios.get(`${logoutRoute}/${id}`);
+    const data = await axiosInstance.get(`${logoutRoute}/${id}`);
     if (data.status === 200) {
       localStorage.clear();
       swal({

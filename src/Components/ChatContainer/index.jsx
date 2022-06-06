@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 import ChatInput from "../ChatInput";
 import { v4 as uuidv4 } from "uuid";
-import axios from "axios";
+import axiosInstance from "../../config";
 import { sendMessageRoute, recieveMessageRoute } from "../../Utils/APIRoutes";
 import '../ChatContainer/ChatContainer.css'
 
@@ -16,7 +16,7 @@ const ChatContainer = ({ currentChat, currentUser, socket }) => {
       localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY)
     );
     if(currentChat){
-      const response = await axios.post(recieveMessageRoute, {
+      const response = await axiosInstance.post(recieveMessageRoute, {
         from: data._id,
         to: currentChat._id,
       });

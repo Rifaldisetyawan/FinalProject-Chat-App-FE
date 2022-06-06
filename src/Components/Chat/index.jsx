@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import axios from "axios";
+import axiosInstance from "../../config";
 import { useNavigate } from "react-router-dom";
 import { io } from "socket.io-client";
 import styled from "styled-components";
@@ -36,7 +36,7 @@ const Chat = () => {
   useEffect(async () => {
     if (currentUser) {
       if (currentUser.isAvatarImageSet) {
-        const data = await axios.get(`${allUsersRoute}/${currentUser._id}`);
+        const data = await axiosInstance.get(`${allUsersRoute}/${currentUser._id}`);
         setContacts(data.data);
       } else {
         navigate("/setAvatar");

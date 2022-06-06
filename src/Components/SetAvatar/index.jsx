@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import axiosInstance from "../../config";
+import {axiosInstance} from "../../config";
 import { Buffer } from "buffer";
 import loader from "../../Assets/loader.gif"
 import { ToastContainer, toast } from "react-toastify";
@@ -56,7 +56,7 @@ const SetAvatar = () => {
   useEffect(async () => {
     const data = [];
     for (let i = 0; i < 4; i++) {
-      const image = await axios.get(
+      const image = await axiosInstance.get(
         `${api}/${Math.round(Math.random() * 1000)}`
       );
       const buffer = new Buffer(image.data);

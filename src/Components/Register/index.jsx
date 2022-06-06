@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axiosInstance from "../../config";
+import {axiosInstance} from "../../config";
 import styled from "styled-components";
 import { useNavigate, Link } from "react-router-dom";
 import Logo from "../../logo2.png";

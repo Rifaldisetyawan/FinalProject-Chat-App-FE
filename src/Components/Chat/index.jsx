@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import axiosInstance from "../../config";
+import {axiosInstance} from "../../config";
 import { useNavigate } from "react-router-dom";
 import { io } from "socket.io-client";
 import styled from "styled-components";

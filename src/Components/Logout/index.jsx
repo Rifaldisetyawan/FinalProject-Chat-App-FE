@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { BiPowerOff } from "react-icons/bi";
 import styled from "styled-components";
-import axiosInstance from "../../config";
+import {axiosInstance} from "../../config";
 import { logoutRoute } from "../../Utils/APIRoutes";
 import '../Logout/Logout.css'
 import swal from "sweetalert";

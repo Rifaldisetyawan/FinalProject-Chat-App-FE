@@ -1,0 +1,48 @@
+.avatar-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    background-image: linear-gradient(180deg, #0c375d, #227278 );
+    height: 100vh;
+    width: 100vw;
+}
+.loader{
+    max-inline-size: 100%;
+}
+.title-container h1{
+    color: white;
+}
+.avatars{
+    display: flex;
+    gap: 2rem;
+}
+.avatars .avatar2{
+    border: 0.4rem solid transparent;
+    padding: 0.4rem;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s ease-in-out;
+}
+.avatars .avatar2 img{
+    height: 6rem;
+}
+.avatars .selected{
+    border: 0.4rem solid #4e0eff;
+}
+.button-avatar{
+    background-color: #0063b6;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    transition: 0.5s ease-in-out;
+}
+.button-avatar:hover{
+    background-color: #20d462;
+}

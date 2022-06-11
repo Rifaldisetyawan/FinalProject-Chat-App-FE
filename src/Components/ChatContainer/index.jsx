@@ -84,7 +84,7 @@ const ChatContainer = ({ currentChat, currentUser, socket }) => {
               className="images-chat"
             />
           </div>
-          <div className="username">
+          <div className="username-chat">
             <h3>{currentChat.username}</h3>
           </div>
         </div>

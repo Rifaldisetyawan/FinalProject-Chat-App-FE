@@ -14,11 +14,14 @@ export default function Welcome() {
   }, []);
   return (
     <Container className="welcome">
-      <img src={welcomelogo} alt="" className="welcome-image"/>
-      <h1>
-        Welcome, <span className="welcome-span">{username} !</span>
-      </h1>
-      <h3>Please select a chat to Start messaging.</h3>
+      <div className="welcome-div">
+        <img src={welcomelogo} alt="" className="welcome-image" />
+        <h1>
+          Welcome, <span className="welcome-span">{username} !</span>
+        </h1>
+        <h3>Please select a chat to Start messaging.</h3>
+      </div>
+
     </Container>
   );
 }

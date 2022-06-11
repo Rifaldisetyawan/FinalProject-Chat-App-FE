@@ -5,7 +5,7 @@
     grid-template-rows: 10% 78% 12%;
     overflow: hidden;
     gap: 0.1rem;
-    background-image: url('../../background.jpg');
+    background-image: url('../../background1.jpg');
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
 }
@@ -13,7 +13,7 @@
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-    background-color: #202c33;
+    background-color: #1e3d59;
     border-top-right-radius: 1rem;
 }
 .user-details{
@@ -29,9 +29,10 @@
     color: white;
     font-size: 18px;
     font-family: sans-serif;
+    text-transform: capitalize;
 }
 .chat-message{
-    background-image: url('../../background.jpg');
+    background-image: url('../../background1.jpg');
     padding: 1rem 1rem;
     display: flex;
     flex-direction: column ;

@@ -2,7 +2,7 @@
     display: grid;
     grid-template-rows: 12% 12% 75%;
     overflow: hidden;
-    background-color: #212c33;
+    background-color: #1e3d59;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
 }
@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    background-color: #202c33;
+    background-color: #1e3d59;
     height: 5rem;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .contact {
-    background-color: #111b21;
+    background-color: #f5f0e1;
     height: 7vh;
     width: 90%;
     cursor: pointer;
@@ -52,7 +52,10 @@
     padding: 0.4rem;
 }
 .contacts .selected {
-    background-color: #08642a;
+    background-color: #e7bf7f;
+}
+.contacts .selected h3{
+    color: white;
 }
 
 .avatar img {
@@ -61,7 +64,8 @@
 
 .username h3 {
     margin: 0;
-    color: white;
+    color: #fba300;
+    text-transform: capitalize;
 }
 
 .current-user {

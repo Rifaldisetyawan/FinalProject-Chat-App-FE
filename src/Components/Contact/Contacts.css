@@ -2,7 +2,7 @@
     display: grid;
     grid-template-rows: 12% 12% 75%;
     overflow: hidden;
-    background-color: #1e3d59;
+    background-color: #10409B;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
 }
@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    background-color: #1e3d59;
+    background-color: #10409B;
     height: 5rem;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .contact {
-    background-color: #f5f0e1;
+    background-color: #144BA9;
     height: 7vh;
     width: 90%;
     cursor: pointer;
@@ -52,7 +52,7 @@
     padding: 0.4rem;
 }
 .contacts .selected {
-    background-color: #e7bf7f;
+    background-color: #093187;
 }
 .contacts .selected h3{
     color: white;
@@ -64,7 +64,7 @@
 
 .username h3 {
     margin: 0;
-    color: #fba300;
+    color: white;
     text-transform: capitalize;
 }
 

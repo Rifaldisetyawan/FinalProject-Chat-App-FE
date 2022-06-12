@@ -4,7 +4,7 @@
     align-items: center;
     flex-direction: column;
     gap: 3rem;
-    background-image: linear-gradient(180deg,#6CB9EA, #27507B );
+    background-image: linear-gradient(180deg, #6CB9EA, #4ba1fd );
     height: 100vh;
     width: 100vw;
 }

@@ -70,6 +70,7 @@
         overflow: hidden;
         border-top-right-radius: 0rem;
         border-bottom-right-radius: 0rem;
+        
     }
     .chat-header{
         display: flex;

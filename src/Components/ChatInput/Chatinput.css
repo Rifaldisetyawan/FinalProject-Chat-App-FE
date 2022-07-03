@@ -102,6 +102,9 @@
 
 @media screen and (max-width:600px) {
     .chatinput-container {
+        position: -webkit-sticky;
+        position: sticky;
+        bottom: 0;
         display: grid;
         grid-template-columns: 10% 90%;
         align-items: center;

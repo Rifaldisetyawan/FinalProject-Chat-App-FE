@@ -61,6 +61,7 @@ const Chat = () => {
             <ChatContainer currentChat={currentChat} socket={socket} />
             
           )}
+          
         </div>
       </Container>
     </>

@@ -39,7 +39,8 @@ const Contacts = ({ contacts, changeChat }) => {
               <Logout />
             </div>
           </div>
-
+          
+          <h6>Contacts</h6>
           <div className="contacts">
             {contacts.map((contact, index) => {
               return (

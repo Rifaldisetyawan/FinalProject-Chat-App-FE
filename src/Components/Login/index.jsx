@@ -75,7 +75,7 @@ const Login = () => {
                 <div className="container-page">
                     <form action="" onSubmit={(event) => handleSubmit(event)} className='form-login'>
                         <div className="brand">
-                            <img src={Logo} alt="logo" />
+                            <img src={Logo} alt="logo" className="brand-img" />
                         </div>
                         <input
                             type="text"
@@ -100,7 +100,7 @@ const Login = () => {
                             Don't have an account ? <Link to="/register">Create One.</Link>
                         </span>
                     </form>
-                    <div className='footer'>@YNTKTS Tech</div>
+                    <div className='footer'><p>@YNTKTS Tech</p></div>
                 </div>
             </FormContainer>
             <ToastContainer/>

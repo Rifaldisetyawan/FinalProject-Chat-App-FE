@@ -53,11 +53,13 @@ const Chat = () => {
     <>
       <Container className="main-container">
         <div className="container-chat">
-          <Contacts contacts={contacts} changeChat={handleChatChange} />
+          <Contacts  contacts={contacts} changeChat={handleChatChange} />
           {currentChat === undefined ? (
             <Welcome />
+            
           ) : (
             <ChatContainer currentChat={currentChat} socket={socket} />
+            
           )}
         </div>
       </Container>

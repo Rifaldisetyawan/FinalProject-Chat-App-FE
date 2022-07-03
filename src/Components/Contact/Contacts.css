@@ -51,10 +51,12 @@
     transition: 0.5s ease-in-out;
     padding: 0.4rem;
 }
+
 .contacts .selected {
     background-color: #093187;
 }
-.contacts .selected h3{
+
+.contacts .selected h3 {
     color: white;
 }
 
@@ -76,7 +78,8 @@
     align-items: center;
     height: 10vh;
 }
-.current-user h2{
+
+.current-user h2 {
     color: white;
     text-transform: uppercase;
     font-size: 18px;
@@ -89,4 +92,108 @@
     max-inline-size: 100%;
 }
 
+@media screen and (max-width:600px) {
+    .container-contact {
+        display: grid;
+        grid-template-rows: 24% 20%;
+        height: fit-content;
+        overflow: hidden;
+        background-color: #10409B;
+        border-top-left-radius: 0rem;
+        border-bottom-left-radius: 0rem;
+    }
 
+    .brand-contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        background-color: #10409B;
+        height: 3.5rem;
+    }
+
+    .brand-contact img {
+        height: 2.5rem;
+    }
+
+    .current-user {
+        background-color: #182229;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: fit-content;
+    }
+
+    .current-user h2 {
+        color: white;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-family: sans-serif;
+        padding-left: 1rem;
+    }
+
+    .current-user .avatar img {
+        height: 2rem;
+        max-inline-size: 100%;
+    }
+
+    .contacts {
+        max-width: 385px;
+        padding: 10px;
+        display: grid;
+        grid-auto-flow: column;
+        column-gap: 0.5rem;
+        overflow-x: auto;
+        height: fit-content;
+    }
+
+    .contacts::-webkit-scrollbar {
+        display: none;
+    }
+
+    .contact {
+        background-color: #144BA9;
+        height: fit-content;
+        width: 90%;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+        display: grid;
+        column-gap: px;
+        grid-template-columns: 1fr;
+        row-gap: 6px;
+        grid-row: 1fr;
+        grid-template-areas:
+            "avatar"
+            "username";
+    }
+
+    .contact .avatar {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        border: 2px solid white;
+        border-radius: 50%;
+        justify-self: center;
+    }
+
+    .contact .avatar img {
+        grid-area: avatar;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        padding: 0px;
+    }
+
+    .contact .username {
+        grid-area: username;
+        justify-self: center;
+        text-overflow: ellipsis;
+        max-width: 60px;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 12px;
+    }
+
+}

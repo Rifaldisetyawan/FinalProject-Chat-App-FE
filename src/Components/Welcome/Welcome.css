@@ -24,3 +24,35 @@
 .welcome-span {
     color : green
 }
+
+@media screen and (max-width:600px) {
+    .welcome {
+    background-image: url('../../background1.jpg');
+    border-bottom-right-radius: 0rem;
+    border-top-right-radius: 0rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 490px;
+}
+.welcome-div{
+    color: black;
+    flex-direction: column;
+    background-color: #10419b80;
+    padding: 10px;
+    border-radius: 1rem;
+    border: 3px solid #093187;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+}
+.welcome-image {
+    height: 4rem;
+}
+
+.welcome-span {
+    color : green
+}
+}

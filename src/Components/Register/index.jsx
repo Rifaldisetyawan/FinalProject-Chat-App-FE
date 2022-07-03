@@ -104,8 +104,8 @@ const Register = () => {
 
   return (
     <>
-      <FormContainer className="form-container">
-        <div className="container-page">
+      <FormContainer className="form-container-register">
+        <div className="container-page-register">
           <form action="" onSubmit={(event) => handleSubmit(event)} className="form-register">
             <div className="brand">
               <img src={Logo} alt="logo" />

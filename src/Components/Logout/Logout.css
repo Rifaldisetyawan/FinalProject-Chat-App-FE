@@ -12,3 +12,17 @@
     font-size: 1.3rem;
     color: #ebe7ff;
 }
+
+@media  screen and (max-width:600px) {
+    .button-logout {
+        padding: 0.3rem;
+        border-radius: 0.5rem;
+        background-color: red;
+        border: none;
+        cursor: pointer;
+    }
+    .button-logout svg{
+        font-size: 1rem;
+        color: #ebe7ff;
+    }
+}

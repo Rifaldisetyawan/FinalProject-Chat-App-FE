@@ -91,12 +91,15 @@
     height: 4rem;
     max-inline-size: 100%;
 }
+h6{
+    display: none;
+}
 
 @media screen and (max-width:600px) {
     .container-contact {
         display: grid;
         grid-template-rows: 24% 20%;
-        height: fit-content;
+        height: 220px;
         overflow: hidden;
         background-color: #10409B;
         border-top-left-radius: 0rem;
@@ -139,7 +142,8 @@
 
     .contacts {
         max-width: 385px;
-        padding: 10px;
+        padding: 0px 10px;
+        margin: 0px 0px 10px 0px;
         display: grid;
         grid-auto-flow: column;
         column-gap: 0.5rem;
@@ -195,5 +199,11 @@
         white-space: nowrap;
         font-size: 12px;
     }
-
+    h6{
+        display: inline;
+        color: white;
+        text-align: center;
+        padding: 0px;
+        margin:10px 0px 0px 0px
+    }
 }
